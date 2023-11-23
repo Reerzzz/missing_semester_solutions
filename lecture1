@@ -1,0 +1,12 @@
+1.echo $SHELL
+2.mkdir /tmp/missing
+3.man touch
+4.touch /tmp/missing/semester
+5.echo '#!/bin/sh' > /tmp/missing/semester
+echo 'curl --head --silent https://missing.csail.mit.edu' >> /tmp/missing/semester
+6.not executable
+7.sh executbale
+8.man chmod
+9.chmod +x semester;because shebang '#!'
+10. ./semester | grep -i last-modified | cut --delimiter=' ' -f2- > last-modified.txt
+11.no battery

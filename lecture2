@@ -1,0 +1,23 @@
+1.ls -a -lsh -t --color
+2.
+macro(){
+    export MARCO=$(pwd)
+}
+
+polo(){
+    cd "%MARCO"
+}
+3.
+#!/usr/bin/env bash
+count = 0
+until [[ "$?" -ne 0 ]];
+do
+    count=$(( count + 1 ))
+    ./rando.sh $> out.txt
+done
+
+echo "found error after $count runs"
+cat out.txt
+4.find . -type f -name "*.html" | xargs tar -czf archive.tar.gz
+5.find . -type f | xargs ls -lt | head -5
+
